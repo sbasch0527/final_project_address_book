@@ -79,7 +79,7 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>
-        <input type="text" class="js-form-control js-address-book-field zip" placeholder="Zip..." aria-label="Address book zip" aria-describedby="basic-addon2"><br>
+        <input type="text" pattern="\d+" class="js-form-control js-address-book-field zip" placeholder="Zip..." aria-label="Address book zip" aria-describedby="basic-addon2"><br>
          <button class="btn btn-primary js-add-to-book js-form-control" type="button">Add to Book</button>
     </div>
     <!-- <div class="js-address-book-container"></div> -->
@@ -120,20 +120,19 @@
 
 <!-- Modal -->
 <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="Google Maps" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title">Map</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body js-modal-map">
+      <div id="map" class="modal-body">
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

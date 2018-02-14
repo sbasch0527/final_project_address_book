@@ -11,6 +11,13 @@ body {
 .js-add-to-book {
 	margin-bottom: 30px;
 }
+.js-edit-text {
+	padding: 0px 10px !important;
+	margin-top: 5px;
+}
+select.js-edit-text {
+	padding: 10px !important;
+}
 .tab-pane {
 	
 	padding: 25px;
@@ -20,4 +27,11 @@ body {
 	border-bottom: 1px solid #ccc;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
+}
+.modal-content {
+	height: 600px !important;
+	top: 150px;
+}
+#map {
+	height: 100%;
 }
